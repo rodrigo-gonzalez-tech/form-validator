@@ -28,10 +28,24 @@ function isValidEmail(email) {
 }
 
 // Check required
+function checkRequired(inputArr) {
+  inputArr.forEach((input) => {
+    if (input.value.trim() === "") {
+      showError(input, `${getFieldName(input)} is required`);
+    } else {
+      showSuccess(input);
+    }
+  });
+}
+
+// Get the name of a field
+function getFieldName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
 
 // Event listeners
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  checkRequired(username);
+  checkRequired([username, email, password, password2]);
 });

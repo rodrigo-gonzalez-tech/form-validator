@@ -27,7 +27,7 @@ body {
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 h2 {
