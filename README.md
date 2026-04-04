@@ -1,6 +1,6 @@
 # Simple Form Validator
 
-This is a simple register page with a form validator written in vanilla CSS and JavaScript, because the fundamentals are important and you have to start somewhere :)
+This is a simple register page with a client-side form validator written in vanilla CSS and JavaScript.
 
 It was great practice for DOM manipulation and functional programming.
 
